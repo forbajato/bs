@@ -24,7 +24,7 @@ At the moment, when invoked from the command line, the argument may be a
 verse reference or list of references, and they will be printed from the
 default Bible module. A word or phrase will be searched for in the
 default module and return a list of verse references. A Strong's number,
-prefixed with 'G' or 'H' will return a definition of the word followed
+prefixed with `G' or `H' will return a definition of the word followed
 by a list of references where the word occurs in the original languages
 based on default Greek and Hebrew Bible modules. If the default Greek
 module includes the Septuagint, it will be searched as well.
