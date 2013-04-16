@@ -1,0 +1,33 @@
+bs
+--
+// {{{
+`bs` is a cli-based frontend for `diatheke`, which is itself a cli-based
+frontend for the http://www.crosswire.org/sword/[Sword Project]. This
+probably seems inefficient and redundant. The first, it is. Why not
+write a python wrapper for the sword library directly? First of all,
+most packages of the sword library do not include python bindings.
+Secondly, the Sword Project seems to have been in a state of limbo for
+quite some time, and they haven't done a proper release for a while.
+This is a huge problem for projects based on the Sword library. However,
+diatheke, the bundled cli-frontend seems to always work, and in a
+reasonably predicable manner.
+
+diatheke is a fine tool in its own right, but it is, by design, rather
+limited in what it can do. The output is not very useful for use
+with Unix pipes either. bs aims to address some of these issues.
+
+At the moment, bs does little more than provide classes for organizing
+the output of diatheke commands. It is most useful when imported at the
+python interactive prompt and data is manipulated in that context.
+
+At the moment, when invoked from the command line, the argument may be a
+verse reference or list of references, and they will be printed from the
+default Bible module. A word or phrase will be searched for in the
+default module and return a list of verse references. A Strong's number,
+prefixed with 'G' or 'H' will return a definition of the word followed
+by a list of references where the word occurs in the original languages
+based on default Greek and Hebrew Bible modules. If the default Greek
+module includes the Septuagint, it will be searched as well.
+
+More to come...
+// }}}
